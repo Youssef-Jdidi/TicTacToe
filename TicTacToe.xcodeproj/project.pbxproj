@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DA7E6F8F2CAD2C4100CAE016 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = DA7E6F8E2CAD2C4100CAE016 /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		DA7E6F6B2CAC906300CAE016 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -40,11 +44,6 @@
 			path = TicTacToeTests;
 			sourceTree = "<group>";
 		};
-		DA7E6F772CAC906300CAE016 /* TicTacToeUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TicTacToeUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA7E6F8F2CAD2C4100CAE016 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,6 @@
 			children = (
 				DA7E6F5C2CAC906100CAE016 /* TicTacToe */,
 				DA7E6F6D2CAC906300CAE016 /* TicTacToeTests */,
-				DA7E6F772CAC906300CAE016 /* TicTacToeUITests */,
 				DA7E6F5B2CAC906100CAE016 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +111,7 @@
 			);
 			name = TicTacToe;
 			packageProductDependencies = (
+				DA7E6F8E2CAD2C4100CAE016 /* ComposableArchitecture */,
 			);
 			productName = TicTacToe;
 			productReference = DA7E6F5A2CAC906100CAE016 /* TicTacToe.app */;
@@ -153,9 +153,6 @@
 			dependencies = (
 				DA7E6F762CAC906300CAE016 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				DA7E6F772CAC906300CAE016 /* TicTacToeUITests */,
-			);
 			name = TicTacToeUITests;
 			packageProductDependencies = (
 			);
@@ -195,6 +192,9 @@
 			);
 			mainGroup = DA7E6F512CAC906100CAE016;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DA7E6F8A2CAC919800CAE016 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DA7E6F5B2CAC906100CAE016 /* Products */;
 			projectDirPath = "";
@@ -558,6 +558,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA7E6F8A2CAC919800CAE016 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA7E6F8E2CAD2C4100CAE016 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA7E6F8A2CAC919800CAE016 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA7E6F522CAC906100CAE016 /* Project object */;
 }

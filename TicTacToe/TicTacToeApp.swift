@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct TicTacToeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView(store: Store(initialState: HomeViewReducer.State.initialValue,
+                                  reducer: { HomeViewReducer() }))
         }
     }
 }
